@@ -2,6 +2,8 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=4000&pause=1500&color=805FA6&width=435&lines=Glory+to+Ukraine!;%D0%A1%D0%BB%D0%B0%D0%B2%D0%B0+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96!)](https://git.io/typing-svg) 
 
+![](https://komarev.com/ghpvc/?username=AngelOfDeath-UA)
+
 If you, like me, had problems with turning off the electricity. You left home to work in a cafe, and then called your neighbor every half hour and asked stupid questions about electricity. There is a solution to the problem if you have a Mikrotik router and 15 minutes of free time.
 
 My script is more productive - because when mikrotik start, scrip automatic launches one loop. The loop starts a script that will be executed automatically until there is a stable internet (check pockets of Google DNS) and it will not be possible to send a message to Telegram. After script send the message, loop will be end.
