@@ -4,7 +4,9 @@
 
 If you, like me, had problems with turning off the electricity. You left home to work in a cafe, and then called your neighbor every half hour and asked stupid questions about electricity. There is a solution to the problem if you have a Mikrotik router and 15 minutes of free time.
 
-Instructions for creating notifications when the router is turned off by script and scheduler:
+Tested on: MikroTik hAP Lite (RB941-2nD) with RouterOS: 6.49.8
+
+Instructions for creating notifications when the router is turned off by the script and scheduler:
 
 ## 1) Create TG Bot.
 You need to find BotFather (bot). Than give him the command:
@@ -13,18 +15,20 @@ You need to find BotFather (bot). Than give him the command:
 Bot_Name
 Unique_name_bot
 ```  
-p.s. Unique_name_bot - must be '_bot' in the end of the name.
+P.s. Unique_name_bot - must be '_bot' in the end of the name.
 
 After you create bot - BotFather give you 'token to access the HTTP API: 0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A'
 
 Where 0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A is your token. You must safe it.
 
 ## 2) Save Telegram Chat ID.
-Open your browser (or Postman) and isert link
+
+Open your browser (or Postman) and isert link:
+
 ```
 https://api.telegram.org/bot0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A/getUpdates
 ```
-where 0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A is your token to access the HTTP API.
+Where 0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A is your token to access the HTTP API.
 
 Response is like:
 ```
@@ -33,15 +37,17 @@ Response is like:
 ```
 Where -0000000000000 (sender_chat.id) - is your chat id. You must safe it.
 
-p.s. 
+P.s. 
 
-if you have a problems with this endpoint - you can use telegram bot 'Get My ID'. 
+If you have a problems with this endpoint - you can use telegram bot 'Get My ID'. 
 
-You can send message for yourself by endpoint sendMessage
+You can send message for yourself by endpoint /sendMessage
+
 ```
 https://api.telegram.org/bot0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A/sendMessage?chat_id=yourself_chat_id&text="Hello world"&parse_mode=html
 
 ```
+
 When you have token to access the HTTP API and Chat ID, you can go to the next step.
 
 ## 3) Mikrotik
@@ -116,5 +122,7 @@ On Event:
 }
 ```
 
-And thats all. You Can check this script on your microtik. Have a nice "notifications" :)
+And that's all. You Can check this script on your Microtik. 
+
+Have a nice "notifications"! :)
 
