@@ -23,7 +23,7 @@ Where 0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A is your token. You must saf
 
 ## 2) Save Telegram Chat ID.
 
-Open your browser (or Postman) and isert link:
+Open your browser (or Postman) and insert link:
 
 ```
 https://api.telegram.org/bot0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A/getUpdates
@@ -39,7 +39,7 @@ Where -0000000000000 (sender_chat.id) - is your chat id. You must safe it.
 
 P.s. 
 
-If you have a problems with this endpoint - you can use telegram bot 'Get My ID'. 
+If you have a problems with this endpoint - you can use enother telegram bot 'Get My ID'. 
 
 You can send message for yourself by endpoint /sendMessage
 
