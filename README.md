@@ -4,7 +4,11 @@
 
 If you, like me, had problems with turning off the electricity. You left home to work in a cafe, and then called your neighbor every half hour and asked stupid questions about electricity. There is a solution to the problem if you have a Mikrotik router and 15 minutes of free time.
 
-Tested on: MikroTik hAP Lite (RB941-2nD) with RouterOS: 6.49.8
+My script is more productive - because when mikrotik start, scrip automatic launches one loop. The loop starts a script that will be executed automatically until there is a stable internet (check pockets of Google DNS) and it will not be possible to send a message to Telegram. After script send the message, loop will be end.
+
+ So, the script is started once, (not every 5-10 minutes during the all life of the router working) like in the enother scripts in the internet.
+
+### Tested on: MikroTik hAP Lite (RB941-2nD) with RouterOS: 6.49.8
 
 Instructions for creating notifications when the router is turned off by the script and scheduler:
 
