@@ -1,6 +1,6 @@
 # Mikrotik Telegram Notification
 
-## Glory to Ukraine! Слава Україні!
+## Glory to Ukraine! Слава Україні! 🇺🇦
 
 If you, like me, had problems with turning off the electricity. You left home to work in a cafe, and then called your neighbor every half hour and asked stupid questions about electricity. There is a solution to the problem if you have a Mikrotik router and 15 minutes of free time.
 
