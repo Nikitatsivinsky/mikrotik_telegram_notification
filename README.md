@@ -9,13 +9,13 @@ Tested on: MikroTik hAP Lite (RB941-2nD) with RouterOS: 6.49.8
 Instructions for creating notifications when the router is turned off by the script and scheduler:
 
 ## 1) Create TG Bot.
+
 You need to find BotFather (bot). Than give him the command:
+
 ```
 /newbot
-Bot_Name
-Unique_name_bot
-```  
-P.s. Unique_name_bot - must be '_bot' in the end of the name.
+```
+BotFather ask you 2 questions Name of the bot (example: MikroTik Notification) and a unique username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bot.
 
 After you create bot - BotFather give you 'token to access the HTTP API: 0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A'
 
