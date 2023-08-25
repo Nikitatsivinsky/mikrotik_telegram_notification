@@ -9,7 +9,7 @@ Instructions for creating notifications when the router is turned off by script 
 ## 1) Create TG Bot.
 You need to find BotFather (bot). Than give him the command:
 ```
- /newbot
+/newbot
 Bot_Name
 Unique_name_bot
 ```  
