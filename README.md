@@ -6,7 +6,7 @@ If you, like me, had problems with turning off the electricity. You left home to
 
 Instructions for creating notifications when the router is turned off by script and scheduler:
 
-1) ## Create TG Bot.
+## 1) Create TG Bot.
 You need to find BotFather (bot). Than give him the command:
 ```
  /newbot.
@@ -19,7 +19,7 @@ After you create bot - BotFather give you 'token to access the HTTP API: 0000000
 
 Where 0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A is your token. You must safe it.
 
-2) ## Save Telegram Chat ID.
+## 2) Save Telegram Chat ID.
 Open your browser (or Postman) and isert link
 ```
 https://api.telegram.org/bot0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A/getUpdates
@@ -44,7 +44,7 @@ https://api.telegram.org/bot0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A/sendM
 ```
 When you have token to access the HTTP API and Chat ID, you can go to the next step.
 
-3) ## Mikrotik
+## 3) Mikrotik
    
 Connect by winbox to your router.
 
