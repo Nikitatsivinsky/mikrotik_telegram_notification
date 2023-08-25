@@ -25,6 +25,7 @@ Open your browser (or Postman) and isert link
 https://api.telegram.org/bot0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A/getUpdates
 ```
 where 0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A is your token to access the HTTP API.
+
 Response is like:
 ```
  {"ok":true,"result":[{"update_id":000000000,
@@ -33,7 +34,9 @@ Response is like:
 Where -0000000000000 (sender_chat.id) - is your chat id. You must safe it.
 
 p.s. 
+
 if you have a problems with this endpoint - you can use telegram bot 'Get My ID'. 
+
 You can send message for yourself by endpoint sendMessage
 ```
 https://api.telegram.org/bot0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A/sendMessage?chat_id=yourself_chat_id&text="Hello world"&parse_mode=html
@@ -42,14 +45,19 @@ https://api.telegram.org/bot0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A/sendM
 When you have token to access the HTTP API and Chat ID, you can go to the next step.
 
 3) Mikrotik
+   
 Connect by winbox to your router.
+
 3.1) Change Identity
+
 in winbox [System] -> [Identity] or by command
 ```
 /system identity set name="MikroTik_Notification"
 ```
 3.2) Create script
+
 in winbox [System] -> [Scripts] -> [+] -> [Name: CheckPowerOn] -> [Policy: read, write, policy, test, sensitive]
+
 Source:
 ```
 # Func: Telegram send message
@@ -88,6 +96,7 @@ Source:
 P.S. insert into TelegramBotToken and TelegramChatID - your values.
 
 3.3) Add Scheduler
+
 In winbox [System] -> [Schedule] -> [+] -> [Name: CheckPowerOn script] - > [Start Time: startup, Interval: 00:00:00] -> [Policy: read, write, policy, test, sensitive]
 
 On Event:
