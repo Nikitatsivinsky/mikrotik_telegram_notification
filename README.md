@@ -14,7 +14,9 @@ Bot_Name
 Unique_name_bot
 ```  
 p.s. Unique_name_bot - must be '_bot' in the end of the name.
+
 After you create bot - BotFather give you 'token to access the HTTP API: 0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A'
+
 Where 0000000000:AAAAaAAaAaaaAaa00000A00KT8AAaA0000A is your token. You must safe it.
 
 2) Save Telegram Chat ID.
