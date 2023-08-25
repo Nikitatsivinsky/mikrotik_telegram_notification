@@ -48,13 +48,13 @@ When you have token to access the HTTP API and Chat ID, you can go to the next s
    
 Connect by winbox to your router.
 
-3.1) Change Identity
+### 3.1) Change Identity
 
 in winbox [System] -> [Identity] or by command
 ```
 /system identity set name="MikroTik_Notification"
 ```
-3.2) Create script
+### 3.2) Create script
 
 in winbox [System] -> [Scripts] -> [+] -> [Name: CheckPowerOn] -> [Policy: read, write, policy, test, sensitive]
 
@@ -95,7 +95,7 @@ Source:
 
 P.S. insert into TelegramBotToken and TelegramChatID - your values.
 
-3.3) Add Scheduler
+### 3.3) Add Scheduler
 
 In winbox [System] -> [Schedule] -> [+] -> [Name: CheckPowerOn script] - > [Start Time: startup, Interval: 00:00:00] -> [Policy: read, write, policy, test, sensitive]
 
